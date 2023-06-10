@@ -10,7 +10,7 @@ namespace ActividadParcial
     {
         static void Main(string[] args)
         {
-            //instanciación clase de gestión de promedio
+            //instanciación clase de la clase que gestiona el promedio de los valores ingresados
             Promedio p = new Promedio();
 
             int op;
