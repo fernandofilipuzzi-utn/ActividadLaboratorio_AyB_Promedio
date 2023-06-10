@@ -51,5 +51,52 @@ namespace ActividadParcial
             }
             return cntMayores;
         }
+
+        public int VerCantidadValores()
+        {
+            return cnt;
+        }
+        public double VerValor(int idx)
+        {
+            double valor = 0;
+            if (idx >= 0 && idx < cnt)
+                valor = valores[idx];
+            return valor;
+        }
+        public void OrdenarValores()
+        {
+            QuickSort(valores,0,cnt-1);            
+        }
+
+        private void QuickSort(double[] a, int inicio, int fin)
+        {
+            #region partición
+            double p = a[inicio];
+            int m = inicio + 1;
+            int n = fin;
+            double aux = 0;
+
+            while (m <= n)
+            {
+                while (m <= fin && a[m] < p) m++;
+                while (n > inicio && p < a[n]) n--;
+
+                if (m < n)
+                {
+                    aux = a[m];
+                    a[m] = a[n];
+                    a[n] = aux;
+                }
+            }
+            a[inicio] = a[n];
+            a[n] = p;
+            #endregion
+
+            if (inicio < n - 1)
+                QuickSort(a, inicio, n - 1);
+            if (n + 1 < fin)
+                QuickSort(a, n + 1, fin);
+        }
+
     }
 }

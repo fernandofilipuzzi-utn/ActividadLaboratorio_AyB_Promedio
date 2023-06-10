@@ -10,7 +10,7 @@ namespace ActividadParcial
     {
         static void Main(string[] args)
         {
-            //instanciación clase de gestión del promedio
+            //instanciación clase de gestión de promedio
             Promedio p = new Promedio();
 
             int op;
@@ -22,6 +22,7 @@ namespace ActividadParcial
                 Console.WriteLine("1- Ingresar valor");
                 Console.WriteLine("2- Calcular y Mostrar promedio");
                 Console.WriteLine("3- Listar valores que superan al promedio");
+                Console.WriteLine("4- Mostrar valores ordenados");
                 Console.WriteLine("Otro- Salir");
                 op = Convert.ToInt32(Console.ReadLine());
                 #endregion
@@ -69,6 +70,26 @@ namespace ActividadParcial
                             for (int n = 0; n < cnt; n++)
                             {
                                 Console.Write("{0:f2} ", valores[n]);
+                            }
+                            Console.Write("\n");
+
+                            Console.WriteLine("Presione cualquier tecla para volver al menú.");
+                            Console.ReadKey();
+
+                            #endregion
+                        }
+                        break;
+                    case 4:
+                        {
+                            #region pantalla para mostrar valores ordenados
+                            Console.Clear();
+                            Console.WriteLine("Valores ordenados");
+
+                            p.OrdenarValores();
+
+                            for (int n = 0; n < p.VerCantidadValores(); n++)
+                            {
+                                Console.Write("{0:f2} ", p.VerValor(n));
                             }
                             Console.Write("\n");
 
