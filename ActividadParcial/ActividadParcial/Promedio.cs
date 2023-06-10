@@ -22,9 +22,8 @@ namespace ActividadParcial
 
         public void AgregarValor(double valor)
         {
-            //acum += valor;
-            valores[cnt++] = valor;
-            //cnt++; 
+            valores[cnt] = valor;
+            cnt++; 
         }
         public double CalcularPromedio()
         {
@@ -36,6 +35,21 @@ namespace ActividadParcial
             if(cnt>0)
                 promedio=acum/cnt;
             return promedio;
+        }
+
+        public int ValoresQueSuperaElPromedio(double [] valoresMayores)
+        {
+            double promedio = CalcularPromedio();
+            int cntMayores=0;
+            for (int n = 0; n < cnt; n++)
+            {
+                if (valores[n] > promedio)
+                {
+                    valoresMayores[cntMayores] = valores[n];
+                    cntMayores++;
+                }
+            }
+            return cntMayores;
         }
     }
 }

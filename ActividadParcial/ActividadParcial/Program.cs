@@ -33,9 +33,9 @@ namespace ActividadParcial
                         {
                             #region pantalla de ingreso de datos
                             Console.Clear();
-                            
+
                             Console.WriteLine("Ingrese el valor");
-                            int valor = Convert.ToInt32( Console.ReadLine() );
+                            double valor = Convert.ToDouble( Console.ReadLine() );
                             p.AgregarValor(valor);
 
                             Console.WriteLine("Presione cualquier tecla para volver al menú.");
@@ -48,9 +48,29 @@ namespace ActividadParcial
                         {
                             #region pantalla para mostrar datos
                             Console.Clear();
-                            
+
                             double promedio = p.CalcularPromedio();
                             Console.WriteLine("El promedio es {0:f2}", promedio);
+
+                            Console.WriteLine("Presione cualquier tecla para volver al menú.");
+                            Console.ReadKey();
+
+                            #endregion
+                        }
+                        break;
+                    case 3:
+                        {
+                            #region pantalla para mostrar datos
+                            Console.Clear();
+                            Console.WriteLine("Valores que superaron el promedio: {0:f2}", p.CalcularPromedio());
+
+                            double[] valores= new double[100];
+                            int cnt = p.ValoresQueSuperaElPromedio(valores);
+                            for (int n = 0; n < cnt; n++)
+                            {
+                                Console.Write("{0:f2} ", valores[n]);
+                            }
+                            Console.Write("\n");
 
                             Console.WriteLine("Presione cualquier tecla para volver al menú.");
                             Console.ReadKey();
