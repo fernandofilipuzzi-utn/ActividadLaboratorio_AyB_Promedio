@@ -30,7 +30,7 @@ namespace ActividadParcial
         {
             double acum = 0;
             for (int n = 0; n < cnt; n++)
-                acum += 0;
+                acum += valores[n];
 
             double promedio = 0;
             if(cnt>0)
