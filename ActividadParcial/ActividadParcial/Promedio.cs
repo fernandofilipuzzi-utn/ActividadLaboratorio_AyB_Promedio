@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ActividadParcial
 {
+    ///Clase que gestiona el promedio
     class Promedio
     {
         double acum;
