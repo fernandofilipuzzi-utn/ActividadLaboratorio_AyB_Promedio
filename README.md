@@ -8,5 +8,5 @@ Luego cree un pequeño con menú. La primera opción debe ser agregar un valor p
 
 Siga las issues propuestas: https://github.com/fernandofilipuzzi-utn/ActividadPragramacion/issues
 
-El diagrama UML final deberá quedar:
+El diagrama UML final deberá quedar:<br/>
 ![alt text](https://github.com/fernandofilipuzzi-utn/ActividadPragramacion/blob/main/ActividadParcial/ActividadParcial/uml/Promedio.jpg?raw=true)
