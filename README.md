@@ -9,5 +9,4 @@ Luego cree un pequeño con menú. La primera opción debe ser agregar un valor p
 Siga las issues propuestas: [issues](https://github.com/fernandofilipuzzi-utn/ActividadLaboratorio_AyB_Promedio/issues)
 
 El diagrama UML final deberá quedar:<br/>
-![alt text](https://github.com/fernandofilipuzzi-utn/ActividadProgramacion_M_Promedio/blob/main/ActividadParcial/ActividadParcial/uml/Promedio.jpg?raw=true)
-
+![alt text](https://github.com/fernandofilipuzzi-utn/ActividadLaboratorio_AyB_Promedio/blob/main/ActividadParcial/ActividadParcial/uml/Promedio.jpg?raw=true)
