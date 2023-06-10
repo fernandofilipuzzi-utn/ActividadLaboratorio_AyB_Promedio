@@ -20,6 +20,7 @@ namespace ActividadParcial
                 Console.WriteLine("\t\tCálculo del promedio");
                 Console.WriteLine("1- Ingresar valor");
                 Console.WriteLine("2- Calcular y Mostrar promedio");
+                Console.WriteLine("3- Listar valores que superan al promedio");
                 Console.WriteLine("Otro- Salir");
                 op = Convert.ToInt32(Console.ReadLine());
                 #endregion
