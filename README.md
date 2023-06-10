@@ -1,4 +1,4 @@
-# Actividad de Pragamación I - práctica
+# Actividad de Progamación I - práctica
 
 Actividad mini-parcial
 
