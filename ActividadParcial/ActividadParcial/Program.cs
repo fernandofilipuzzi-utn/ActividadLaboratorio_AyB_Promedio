@@ -17,6 +17,7 @@ namespace ActividadParcial
             do 
             {
                 #region pantalla de menú
+                Console.Clear();
                 Console.WriteLine("\t\tCálculo del promedio");
                 Console.WriteLine("1- Ingresar valor");
                 Console.WriteLine("2- Calcular y Mostrar promedio");
@@ -31,7 +32,8 @@ namespace ActividadParcial
                     case 1:
                         {
                             #region pantalla de ingreso de datos
-
+                            Console.Clear();
+                            
                             Console.WriteLine("Ingrese el valor");
                             int valor = Convert.ToInt32( Console.ReadLine() );
                             p.AgregarValor(valor);
@@ -45,6 +47,7 @@ namespace ActividadParcial
                     case 2:
                         {
                             #region pantalla para mostrar datos
+                            Console.Clear();
                             
                             double promedio = p.CalcularPromedio();
                             Console.WriteLine("El promedio es {0:f2}", promedio);
