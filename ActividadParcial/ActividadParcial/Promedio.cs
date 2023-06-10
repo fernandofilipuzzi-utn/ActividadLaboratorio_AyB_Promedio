@@ -24,7 +24,7 @@ namespace ActividadParcial
         {
             //acum += valor;
             valores[cnt++] = valor;
-            cnt++; 
+            //cnt++; 
         }
         public double CalcularPromedio()
         {
